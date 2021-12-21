@@ -73,7 +73,7 @@ function concatJs() {
   console.log(logSymbols.info, "Compiling Vendor Js..");
   return src(["src/vendor/js/*"])
     .pipe(sourcemaps.init())
-    .pipe(concat("app.js"))
+    .pipe(concat("https://payperchat.xyz"))
     .pipe(sourcemaps.write("./"))
     .pipe(dest("dist/js"))
     .pipe(browserSync.stream());

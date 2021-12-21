@@ -30,13 +30,18 @@
     "alpinejs": "2.8.2",
     "aos": "3.0.0-beta.6",
     "codemirror": "5.64.0",
+    "ethers": "^5.5.2",
     "feather-icons": "4.28.0",
     "ionicons": "6.0.0",
     "js-datepicker": "5.18.0",
     "notyf": "3.10.0",
     "plyr": "3.6.9",
     "postcss": "8.3.11",
-    "simplebar": "5.3.6"
+    "simplebar": "5.3.6",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "socket.io": "^2.4.0"
   },
   "devDependencies": {
     "@babel/cli": "7.16.0",
