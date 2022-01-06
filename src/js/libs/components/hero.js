@@ -4,7 +4,7 @@ export function initHero() {
             particlesJS("particles-js", {
                 "particles": {
                     "number": {
-                        "value": 50,
+                        "value": 2,
                         "density": {
                             "enable": true,
                             "value_area": 1000
@@ -17,11 +17,11 @@ export function initHero() {
                     "shape": {
                         "type": "circle",
                         "stroke": {
-                            "width": 5,
+                            "width": 35,
                             "color": "#5507fc"
                         },
                         "polygon": {
-                            "nb_sides": 5
+                            "nb_sides": 2
                         },
                         "image": {
                             "src": "img/github.svg",
@@ -30,42 +30,42 @@ export function initHero() {
                         }
                     },
                     "opacity": {
-                        "value": 0.6,
-                        "random": false,
+                        "value": 0.1,
+                        "random": true,
                         "anim": {
-                            "enable": false,
-                            "speed": 1,
+                            "enable": true,
+                            "speed": 2,
                             "opacity_min": 0.1,
-                            "sync": false
+                            "sync": true
                         }
                     },
                     "size": {
-                        "value": 2,
+                        "value": 15,
                         "random": true,
                         "anim": {
-                            "enable": false,
-                            "speed": 40,
+                            "enable": true,
+                            "speed": 4,
                             "size_min": 0.1,
-                            "sync": false
+                            "sync": true
                         }
                     },
                     "line_linked": {
                         "enable": true,
-                        "distance": 120,
+                        "distance": 1420,
                         "color": "#5507fc",
                         "opacity": 0.2,
                         "width": 1.6
                     },
                     "move": {
                         "enable": true,
-                        "speed": 3,
-                        "direction": "top",
-                        "random": false,
+                        "speed": 1,
+                        "direction": "random",
+                        "random": true,
                         "straight": false,
                         "out_mode": "out",
-                        "bounce": false,
+                        "bounce": true,
                         "attract": {
-                            "enable": false,
+                            "enable": true,
                             "rotateX": 600,
                             "rotateY": 1200
                         }
