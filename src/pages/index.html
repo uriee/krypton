@@ -17,21 +17,29 @@ title: Home
         </div>
 
         <!-- Animated particles -->
-        <div x-data="initHero()" x-init="initParticles()" id="particles-js"></div>
+        <!-- ctm remove <div x-data="initHero()" x-init="initParticles()" id="particles-js"></div> -->
 
         <!-- Hero Image and Title -->
         <div class="hero-body">
             <div class="container">
+
+                <!-- ctm -->
+                <div class="ctm-landing-logo-on-text-container">
+                    <object class="ctm-logo-on-text" data="/img/logo/ctmLogoOnText.svg"></object>
+                    <p class="ctm-logo-subtitle">CTM 1 token - only 2 sides 4 a video chat: Praivet & Direct pay;</p>
+                </div>
+
                 <div class="columns is-vcentered">
 
                     <!-- Landing page Title -->
                     <div class="column is-5 landing-caption">
-                        <h1 class="title is-1 is-light is-semibold is-spaced main-title">CrypToMeet.me</h1>
+                        <!--ctm remove <h1 class="title is-1 is-light is-semibold is-spaced main-title">CrypToMeet.me</h1>
                         <h2 class="subtitle is-5 is-light is-thin">
                             Use the CTM utility token
-                        </h2>
+                        </h2> -->
                         <!-- CTA -->
-                        <p class="buttons">
+
+                        <!--ctm remove <p class="buttons">
                             <a href="#start" class="button k-button k-primary raised has-gradient is-fat is-bold">
                                 <span class="text">Get Started</span>
                                 <span class="front-gradient"></span>
@@ -40,13 +48,43 @@ title: Home
                                 <span class="text">Chat now!</span>
                                 <span class="front-gradient"></span>
                             </a>
-                        </p>
+                        </p> -->
+
+                        <!-- ctm -->
+                        <div class="ctm-landig-page-button-container" style="margin-bottom: 5%;">
+                            <a href="#start" class="button-link">
+                                <div>
+                                    <table>
+                                        <tr> 
+                                            <td class="button-img"> <object data="/img/logo/CTMtokenV1.svg"></object></td>
+                                            <!-- <td class="button-spacer"> </td>                    -->
+                                            <td class="button-text">Get Started</td>
+                                        </tr>
+                                    </table>
+                                </div>                             
+                            </a>
+                        </div>
+
+                        <div class="ctm-landig-page-button-container">
+                            <a href="https://app.cryptomeet.me" class="button-link">
+                                <div>
+                                    <table>
+                                        <tr> 
+                                            <td class="button-img"> <object data="/img/logo/ctmLogoMeetingFlatBold.svg"></object></td>
+                                            <!-- <td class="button-spacer"> </td>                    -->
+                                            <td class="button-text">Crypto Meet Now</td>
+                                        </tr>
+                                    </table>
+                                </div>                            
+                            </a>
+                        </div>
 
                     </div>
                     <!-- Hero image -->
                     <div class="column is-7">
-                        <figure class="image">
-                            <img src="/img/illustrations/dogmiddle.png" alt="">
+                        <!--ctm remove <figure class="image"> -->
+                        <figure class="ctm-illustration">
+                            <img src="/img/illustrations/ctmDiagramNoText.svg" alt="">
                         </figure>
                     </div>
                 </div>

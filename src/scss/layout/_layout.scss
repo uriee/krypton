@@ -28,7 +28,8 @@ body {
 ========================================================================== */
 
 .dark-wrapper {
-    background: url(../img/bg/gradient-left-darker.png) repeat-y top left, url(../img/bg/gradient-right-darker.png) repeat-y top right, #1c004c;
+    // ctm remove background: url(../img/bg/gradient-left-darker.png) repeat-y top left, url(../img/bg/gradient-right-darker.png) repeat-y top right, #1c004c;
+    background: $ctm-background;
 }
 
 .hero, .section {
@@ -54,6 +55,92 @@ body {
         .subtitle {
             max-width: 420px;
         }
+    }
+    
+    .ctm-landing-logo-on-text-container {
+        margin-bottom: 50px;
+
+        .ctm-logo-on-text {
+            width: 70%;
+            margin-left: 15%;
+        }
+
+        .ctm-logo-subtitle {
+            color: $ctm-text-gray;
+            width: 80%;
+            text-align:center;
+            font-size: x-large;
+               // font-size: 1.2rem;
+            font-weight: 600;
+                // padding: 0 10px;
+                // text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-left: 10%;
+            margin-top: 30px;
+        }
+    }
+
+    .ctm-landig-page-button-container{
+        margin-bottom: 5%;
+
+        /* unvisited link */
+        a:link {
+            color: $ctm-text-gray;
+        }
+        
+        /* visited link */
+        a:visited {
+            color: $ctm-text-gray;
+        }
+        
+        /* mouse over link */
+        a:hover {
+            color: $ctm-logo-gray;
+        }
+        
+        /* selected link */
+        a:active {
+            color: $ctm-text-gray;
+        }
+        div {
+            padding:5%;
+            border-radius: 30px;
+            border: solid 2px $ctm-logo-background-gray;
+            background-color: $ctm-darken-bckground;
+        }
+
+        table {
+            width: 100%;
+        }
+
+
+        td.button-img {
+            text-align: center;
+            min-width: 200;
+            width: 30%;
+        }
+
+        // td.button-spacer {
+        //     width: 10%;
+        // }
+
+        td.button-text {
+            text-align: center;
+            vertical-align: middle;
+            width: 70%;
+            font-size: x-large;
+            font-style:normal;
+            font-weight: bold;
+        }
+
+        object {
+            width: 100px;
+        }
+        
+    }
+    
+    .ctm-illustration {
+        margin: 5%;
     }
 
     //Background gradient
@@ -102,18 +189,31 @@ body {
             min-height: 4rem;
 
             img {
-                max-height: 36px !important;
-                height: 36px;
+                //ctm remove -
+                // max-height: 36px !important;
+                // height: 36px;
+                // - ctm remove
+                max-height: 30px !important;
+                height: 30px;
             }
 
             //brand text
             .brand-name {
-                font-family: 'Cabin', sans-serif;
-                font-size: 1.2rem;
-                font-weight: 600;
-                padding: 0 10px;
-                text-transform: uppercase;
-                letter-spacing: 3px;
+                //ctm remove -
+                // font-family: 'Cabin', sans-serif;
+                // font-size: 1.2rem;
+                // font-weight: 600;
+                // padding: 0 10px;
+                // text-transform: uppercase;
+                // letter-spacing: 3px;
+                // - ctm remove
+                margin-left: 10px;
+                font-style: bold;
+                font-size:x-large;
+                color: $ctm-logo-gray;
+                stroke: $ctm-bordo;
+                stroke-width:0.785;
+                stroke-miterlimit:10;
             }
 
             //Removing navbar item default hover behaviour
@@ -154,7 +254,8 @@ body {
         &.is-light, &.is-dark {
             .navbar-brand {
                 .brand-name {
-                    color: $white;
+                    // ctm remove color: $white;
+                    color: $ctm-logo-gray;
                 }
 
                 .navbar-link::after {
