@@ -1,0 +1,158 @@
+/* * {
+    border: 2px solid green;
+} */
+
+:root {
+  /* --main-b-color:#521e66; */
+  /* --main-a-color:#7C7C7C;
+  --main-c-color:#a7a5a5; */
+
+  /* --main-b-color:#f7ecb3; */
+
+  --main-b-color:#aca37b;
+  --main-a-color:#7a292f;
+  --main-c-color:#7a292f;
+
+  --main-border-width:1px;
+}
+
+body {
+    background-color:var(--main-b-color);
+    direction: rtl;
+}
+
+#logoDiv {
+  background-color: var(--main-b-color);
+} 
+
+#logo {
+  width:100%;
+  height:"auto";
+  background-color: var(--main-b-color);
+  border: solid var(--main-a-color) var(--main-border-width);
+}
+
+#logoUnderliner{
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom:20px;
+  background-color: var(--main-b-color);
+  text-align:left;
+  color: var(--main-a-color);
+  font-size: min(max(12px, 2vw), 16px);
+}
+
+hr {
+  border-top-color: solid var(--main-a-color) var(--main-border-width);
+  border: solid var(--main-a-color) 1px;
+  align-self: center;
+  width: 2%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+/* 
+ #hargolDiv{
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+  width: 40%;
+  height: auto;
+  background-color: var(--main-b-color);
+  left: 50%;
+  margin-left: -100px;
+}  */
+
+#hargolContainer{
+  border-right: solid var(--main-a-color) var(--main-border-width);
+  margin: 5%;
+}
+
+#hargolTextFrame{
+  position: relative;
+  align-content: center;
+  margin: 20px;
+  width: 90%;
+  min-height: 600px;
+  background-color: var(--main-b-color);
+}
+
+#prevHargolDiv{
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+  margin-right: 30%;
+  width: 40%;
+  padding-right: 10px;
+  align-self: center;
+  background-color: var(--main-b-color);
+  border-right: solid var(--main-a-color) var(--main-border-width);
+}
+
+/* #holedDiv{
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+  width: 40%;
+  height: auto;
+  background-color: var(--main-b-color);
+  left: 50%;
+  margin-left: -100px;
+}  */
+
+#holedContainer{
+  border-right: solid var(--main-a-color) var(--main-border-width);
+  margin: 5%;
+}
+
+#holedTextFrame{
+  position: relative;
+  align-content: center;
+  margin: 20px;
+  width: 90%;
+  min-height: 600px;
+  background-color: var(--main-b-color);
+}
+
+#prevHoledDiv{
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+  margin-right: 30%;
+  width: 40%;
+  padding-right: 10px;
+  align-self: center;
+  background-color: var(--main-b-color);
+  border-right: solid var(--main-a-color) var(--main-border-width);
+}
+
+/* .zzContainer{
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 70%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  /* border: var(--main-a-color) solid 2px;
+  border-radius: 6px; */
+  /* background-color: var(--main-b-color);
+  border: 1px solid var(--main-a-color);
+} */
+
+/* .zzFrame {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-b-color);
+}  */
+
+
+

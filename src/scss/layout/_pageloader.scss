@@ -24,7 +24,7 @@ TABLE OF CONTENTS
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: $fade-grey;
+    background-color: $ctm-background;
     z-index: 999998;
     transition: -webkit-transform 0.35s ease-out;
     transition: transform 0.35s ease-out;
@@ -40,7 +40,8 @@ TABLE OF CONTENTS
     }
 
     &.is-theme {
-        background-image: linear-gradient(to bottom, #22005b 0%, #161a31 100%) !important;
+        background-color: $ctm-background;
+        // background-image: linear-gradient(to bottom, #22005b 0%, #161a31 100%) !important;
     }
 
     &::after, &::before {
@@ -58,8 +59,8 @@ TABLE OF CONTENTS
         margin-left: -100px;
         width: 200px;
         height: 200px;
-        background-color: rgba(255, 255, 255, 0.5);
-        border: 3px solid rgba(255, 255, 255, 0.75);
+        background-color: $ctm-background;
+        border: 6px solid $ctm-text-gold;
         -webkit-animation: page-loader-inner 1.5s infinite ease-out;
         animation: page-loader-inner 1.5s infinite ease-out;
     }
@@ -69,7 +70,7 @@ TABLE OF CONTENTS
         margin-left: -30px;
         width: 60px;
         height: 60px;
-        background-color: #fff;
+        background-color: $ctm-background;
         -webkit-animation: page-loader-outer 1.5s infinite ease-in;
         animation: page-loader-outer 1.5s infinite ease-in;
     }

@@ -28,7 +28,8 @@ body {
 ========================================================================== */
 
 .dark-wrapper {
-    background: url(../img/bg/gradient-left-darker.png) repeat-y top left, url(../img/bg/gradient-right-darker.png) repeat-y top right, #1c004c;
+    // ctm remove background: url(../img/bg/gradient-left-darker.png) repeat-y top left, url(../img/bg/gradient-right-darker.png) repeat-y top right, #1c004c;
+    background: $ctm-background;
 }
 
 .hero, .section {
@@ -112,7 +113,7 @@ body {
                 font-size: 1.2rem;
                 font-weight: 600;
                 padding: 0 10px;
-                text-transform: uppercase;
+                // ctm remove text-transform: uppercase;
                 letter-spacing: 3px;
             }
 
@@ -154,22 +155,22 @@ body {
         &.is-light, &.is-dark {
             .navbar-brand {
                 .brand-name {
-                    color: $white;
+                    color: $ctm-text-gold;
                 }
 
                 .navbar-link::after {
-                    border-color: $white;
+                    border-color: $ctm-text-gold;
                 }
             }
 
             .navbar-item {
                 a {
-                    color: $white;
+                    color: $ctm-text-gold;
                 }
             }
 
             .navbar-burger .rotate i {
-                background-color: $white !important;
+                background-color: $ctm-text-gold !important;
             }
 
             //Responsive menu
@@ -184,7 +185,7 @@ body {
         //Fixed navbar modifier
         &.is-fixed {
             min-height: 4rem !important;
-            background: $white;
+            background: $ctm-text-gold;
             box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
 
             a {
@@ -197,10 +198,11 @@ body {
 
             //Dark modifier
             &.is-dark {
-                background: #2d0275 !important;
+                // ctm remove background: #2d0275 !important;
+                background: $ctm-background !important;
 
                 a {
-                    color: $white;
+                    color: $ctm-text-gold;
 
                     &:hover {
                         color: #fcfcfc;
@@ -209,7 +211,9 @@ body {
 
                 .navbar-menu {
                     &.is-active {
-                        background: #2d0275 !important;
+                        // ctm remove background: #2d0275 !important;
+                        background: $ctm-background !important;
+
                     }
                 }
             }
@@ -360,6 +364,27 @@ body {
         background: darken(#1c004c, 5%);
         opacity: 0.7;
     }
+}
+
+// ctm add
+
+#landingBody {
+padding-top: 0px;
+padding-left: 0;
+padding-right: 0;
+}
+
+.svg-landing-button {
+    cursor: pointer;
+    pointer-events: bounding-box;
+}
+
+.svg-landing-button:hover .svg-button-border {
+    fill: $ctm-svg-border-button-hover-fill;
+}
+
+#landingArt {
+    border-left: solid 1px $ctm-gold-dark;
 }
 
 //Common styles
