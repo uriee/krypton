@@ -29,12 +29,14 @@ body {
 
 .dark-wrapper {
     // ctm remove background: url(../img/bg/gradient-left-darker.png) repeat-y top left, url(../img/bg/gradient-right-darker.png) repeat-y top right, #1c004c;
-    background: $ctm-background;
+    //background: $ctm-background-dark;
+    background: url(../img/bg/gradient-left-darker.png) repeat-y top left, url(../img/bg/gradient-right-darker.png) repeat-y top right, #1c004c;
 }
 
 .hero, .section {
     &.is-transparent {
-        background: transparent !important;
+        //background-color: $ctm-background;
+         background: transparent !important;
     }
 }
 
@@ -87,6 +89,7 @@ body {
         min-height: 4rem;
         transition: all .3s;
         z-index: 99;
+        background-color: $ctm-background;
 
         .container {
             min-height: 4rem;
@@ -319,6 +322,11 @@ body {
     background: url(../img/bg/gradient-left.png) no-repeat top left, url(../img/bg/gradient-right.png) no-repeat top right, #320184;
 }
 
+#big-gradient {
+    background: url(../img/bg/gradient-left.png) no-repeat top left, url(../img/bg/gradient-right.png) no-repeat top right, #320184;
+    //background-color: $ctm-background;
+}
+
 //Dark radial gradient background
 .has-big-dark-gradient {
     background: url(../img/bg/gradient-left-darker.png) no-repeat top left, url(../img/bg/gradient-right-darker.png) no-repeat top right, #1c004c;
@@ -367,14 +375,51 @@ body {
 }
 
 // ctm add
+//  #posterSvg {
+//  }
 
-#landingBody {
-padding-top: 0px;
-padding-left: 0;
-padding-right: 0;
+#start {
+    padding-bottom: 10%;
 }
 
+#start-divider {
+    width: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+ }
+ 
+ .feature {
+     img {
+         padding: 1%;
+     }
+ }
+ 
+ 
+ #lock-text, #cam-text, #token-text, #app-sutitle {
+     color: $ctm-text-gold;
+     opacity: 1;
+     font-size: large;
+ }
+
+ #lock-title, #cam-title, #token-title{
+    color: $ctm-text-gold;
+    opacity: 1;
+    font-size: x-large;
+}
+
+// Landing Poster
+ #landingBody {
+// padding-top: 0px;
+ padding-left: 0;
+ padding-right: 0;
+ }
+
 .svg-landing-button {
+    cursor: pointer;
+    pointer-events: bounding-box;
+}
+
+.svg-landing-clickable {
     cursor: pointer;
     pointer-events: bounding-box;
 }
@@ -383,18 +428,275 @@ padding-right: 0;
     fill: $ctm-svg-border-button-hover-fill;
 }
 
-#landingArt {
-    border-left: solid 1px $ctm-gold-dark;
+// ctm app pages
+
+.is-pad-top {
+    padding-top: 10%;
 }
+
+.feature-app-page-title {
+    color: $ctm-text-gold;
+    font-size: larger;
+    border-left: solid 1px $ctm-text-gold;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 6%;
+}
+
+
+.is-side-feature-app-page-centered {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+   // background-color: $ctm-app-welcome-background;
+}
+
+.side-feature-app-page{
+    width: 80%;
+    max-width: 40vw;
+    max-height: 70vh;
+ }
+
+
+
+ .is-feature-app-page-column {
+   // background-color: $ctm-app-welcome-background;
+    background-color: transparent;
+
+ }
+
+// ctm add app demo //////////
+#app-section {
+    padding: 0%;
+    margin: 0;
+}
+
+#app-demo-main {
+    background-color:transparent;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    // background-color:$ctm-app-welcome-background;
+    width: 100%;
+    // height: 100vh;
+}
+
+#app-demo-contant {
+    min-width: 300px;
+    min-height: 400px;
+    width: 40%;
+    overflow:hidden;
+    display: block;
+}
+
+
+/// app welcome page///////////
+#app-welcome-page {
+    margin-top: 0%;
+    margin-left: 0%;
+    margin: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+     //background-color:$ctm-app-welcome-background;
+     display:block;
+     padding-bottom: 10%;
+ }
+
+/// app create page ///////////
+#app-create-page {
+    margin-top: 0%;
+    margin-left: 0%;
+    margin: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+     //background-color:$ctm-app-welcome-background;
+     display:none;
+     padding-bottom: 10%;
+}
+
+/// app join page ///////////
+#app-join-page {
+    margin-top: 0%;
+    margin-left: 0%;
+    margin: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+     display:none;
+     padding-bottom: 10%;
+}
+
+.app-cancel-button {
+    border: 2px solid $ctm-app-front-color;
+    border-radius: 100%;
+    width: 20;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    background: transparent;
+    justify-content: center;
+float: right;
+}
+
+.app-cancel-button:hover  {
+    background-color: $ctm-svg-border-button-hover-fill;
+}
+
+.is-app-front-text {
+    font-size: larger;
+    color: $ctm-app-front-color;
+}
+
+.app-field-container {
+    padding: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 4%;
+    width: 100%;
+    //background-color: #1195f7;
+    min-height: 40px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.app-field-icon-container {
+    justify-content: center;
+    padding-right: 2%;
+    // border-right: solid 1px $ctm-app-front-color;
+    // border-left: solid 1px $ctm-app-front-color;
+    display: inline-block;
+}
+
+.app-field-icon {
+
+    display: block;
+   margin: 10%;
+    margin-bottom: 0%;
+}
+
+.app-field-text-container {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    padding-left: 2%;
+}
+
+.app-field-title {
+    margin: 0%;
+    margin-top: auto;
+    color: $ctm-text-gold;
+    font-size: large;
+    font-weight: bold;
+}
+
+.app-field-input {
+    margin: 0%;
+    border: none;
+    border-bottom: 1px solid $ctm-app-front-color;
+    background-color: transparent;
+    resize: none;
+    color: white;
+    font-size: medium;
+}
+
+.app-field-input:focus {
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+#app-create-button-container{
+    padding: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 4%;
+    width: 100%;
+    //background-color: #1195f7;
+    min-height: 40px;
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+}
+
+#app-join-button-container{
+    padding: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 4%;
+    width: 100%;
+    //background-color: #1195f7;
+    min-height: 40px;
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+}
+
+.app-page-title {
+    text-align: center;
+    width: 100%;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 5%;
+    clear: both;
+}
+
+
+
+
+#app-welcome-logo {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#app-welcome-title {
+    text-align: center;
+    width: 100%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#app-welcome-subtitle {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+#app-welcome-or-text {
+    text-align: center;
+    width: 100%;
+}
+
+.app-welcome-button {
+    border: 2px solid $ctm-app-front-color;
+    border-radius: 20px;
+    background: transparent;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 90%;
+    min-height: 40px;
+}
+
+.app-welcome-button:hover  {
+    background-color: $ctm-svg-border-button-hover-fill;
+}
+
+#app-welcome-or-text {
+    text-align: center;
+    width: 100%;
+}
+
+
+
 
 //Common styles
 .title, .subtitle {
     //lighttext modifier
     &.is-light {
-        color: $white;
+        color: $ctm-text-gold;
 
         + p {
-            color: $white;
+            color: $ctm-text-gold;
         }
     }
 
@@ -436,8 +738,8 @@ padding-right: 0;
 //Subtitles
 .subtitle {
     font-family: 'Cabin', sans-serif;
-    opacity: 0.8;
-
+    // ctm remove opacity: 0.8;
+    opacity: 1;
     &.is-compact {
         max-width: 600px;
         margin: 0 auto;

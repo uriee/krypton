@@ -107,6 +107,7 @@ TABLE OF CONTENTS
 ========================================================================== */
 
 @media (max-width: 767px) {
+
     //Navbar
     .navbar {
         .navbar-item {
@@ -191,6 +192,67 @@ TABLE OF CONTENTS
         transform: translateX(210px);
         top: -86px;
     }
+
+    //LandingPoster/////////////
+    #vLine {
+        display: none;
+    }
+
+    // browser support todo
+    #Art {
+        transform: translate(-515px, 400px) scale(0.714);
+    }
+
+    // browser support todo
+    // #BackgroundHorizontal_1_ {
+    //   //  transform: translate(-515px, 400px) scale(0.714);
+    //   x: 357.5px;
+    // } 
+
+    #Background {
+        fill:url(#BackgroundVertical_1_)
+    }
+
+    // browser support todo
+    #Page {
+        transform: translate(0px, -250px);
+    }
+
+    // poster end /////////////
+    #start-divider {
+        width: 60%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+
+    // side featyres app pages
+    .side-feature-app-page {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .feature-app-page-title {
+        text-align: center;
+        width: 100%;
+        border: none;
+    }
+
+    // ctm app
+    #app-demo-contant {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    //loader
+    .ctmpageloader
+    {
+        width: 72%;
+        top: 30%;
+        left: 14%;
+    }
+
+
 }
 
 /* ==========================================================================
@@ -198,3 +260,27 @@ TABLE OF CONTENTS
 ========================================================================== */
 
 @media (max-width: 768px) {}
+
+
+// @media (max-width: 1000px) {
+//     [id=vLine] {
+//        display: none;
+//     }
+//     [id=Art] {
+//        transform: translate(-515px, 400px) scale(0.714);
+//     }
+//     [id=BackgroundHorizontal_1_] {
+//        transform: translate(-515px, 400px) scale(0.714);
+//     } 
+//     [id=BackgroundHorizontal] {
+//     width: 715px;
+//     height: 1200px;
+//     }
+//     [id=Page] {
+//        transform: translate(0px, -250px);
+//     }
+//     [id=PosterSvg] {
+//        viewBox:"0 0 715 1501";
+//        enable-background:"new 0 0 1717 1001";
+//     }
+//     }

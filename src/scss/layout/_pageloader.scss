@@ -13,9 +13,56 @@ TABLE OF CONTENTS
 =============================================================================
 ***/
 
+.stBG{fill:#2C0078;}
+
+.stText {
+    fill: $ctm-app-front-color;
+}
+
+.stRing {
+    fill: $ctm-app-front-color;
+}
+
+.stTextWriter {
+    fill: $ctm-background;
+}
+
+#LoaderLogo {
+    opacity: 0;
+}
+
+.ctmpageloader
+{
+    display: block;
+    overflow: visible;
+    width: 24%;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    max-height: 40vh;
+   //background-color: red;
+    z-index: -1;
+   // opacity: 0;
+    //transition: opacity 3s;
+    z-index: 999998;
+
+    //Active state
+    &.is-active {
+       // opacity: 1;
+        z-index: 999997;
+    }
+}
+
+
+
+
+
 /* ==========================================================================
 0. Pageloader
 ========================================================================== */
+
+
 
 .pageloader {
     position: fixed;
@@ -143,14 +190,14 @@ TABLE OF CONTENTS
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #22005b;
+    //background-color: $ctm-background;
     z-index: -1;
-    opacity: 0;
-    transition: opacity .35s;
+    opacity: 1;
+    //transition: opacity 0.1s;
 
     //Active state
     &.is-active {
-        opacity: 1;
+       // opacity: 1;
         z-index: 999997;
     }
 }
